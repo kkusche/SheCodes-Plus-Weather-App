@@ -1,0 +1,290 @@
+/*======================================
+*            general rules        *
+======================================*/
+
+body {
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+}
+
+/*======================================
+*            Top Section      *
+======================================*/
+
+.form-control {
+  border: 1px solid rgb(0, 0, 0);
+}
+.form-control:focus {
+  border-color: black;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+.btn-outline-secondary {
+  border: 1px solid black;
+  color: black;
+}
+
+.btn-outline-secondary:hover {
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.fa-search-location {
+  font-size: 24px;
+  color: black;
+}
+
+/*======================================
+*            Middle Section      *
+======================================*/
+
+#tempUnits {
+  margin-bottom: 20px;
+}
+
+#celsius-link {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: transparent;
+  background-clip: border-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 10px;
+}
+
+#celsius-link:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+#fahrenheit-link {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: transparent;
+  background-clip: border-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 10px;
+  margin: 10px;
+}
+
+#fahrenheit-link:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+#today {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+}
+
+#description {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+#humidityID {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+#windID {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.card-body1 {
+  color: black;
+  background-color: transparent;
+  background-clip: border-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  margin-top: 20px;
+  text-align: center;
+  padding-left: 0px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 42px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 56px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+ul {
+  list-style: none;
+  line-height: 1.25;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.currentLocation {
+  margin-left: 150px;
+  margin-top: 75px;
+}
+
+#current-location-button {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 48px;
+  background-color: transparent;
+  background-clip: border-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 12px 30px 12px 30px;
+  margin: 10px;
+}
+
+#current-location-button:hover {
+  background-color: white;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+/*======================================
+*            Bottom Section      *
+======================================*/
+.bottomSection {
+  text-align: center;
+  width: 100%;
+}
+
+/*======================================
+*            Footer Section      *
+======================================*/
+.footerSection {
+  text-align: right;
+  padding: 0px 80px 0px 0px;
+}
+
+/*======================================
+*            Media queries      *
+======================================*/
+
+@media (max-width: 767.98px) {
+  .topSection {
+    margin-top: 50px;
+    margin-bottom: 125px;
+  }
+}
+
+@media (min-width: 768px) {
+  .topSection {
+    margin-top: 50px;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .input-group {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    height: 100vh;
+  }
+  .sectionsWrapper {
+    height: 100vh;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .sectionsWrapper .topSection {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width: 1280px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+  .sectionsWrapper .middleSection {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width: 1280px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+  .sectionsWrapper .bottomSection {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width: 1280px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .sectionsWrapper .footerSection {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width: 1280px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
