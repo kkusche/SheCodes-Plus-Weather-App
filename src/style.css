@@ -281,7 +281,7 @@ h1 {
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-    width: 1280px;
+    width: 1200px;
     margin-bottom: 50px;
     margin-left: 50px;
   }
@@ -295,7 +295,7 @@ h1 {
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-    width: 1280px;
+    width: 1200px;
     margin-bottom: 50px;
     margin-left: 50px;
   }
@@ -309,11 +309,16 @@ h1 {
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-    width: 1280px;
+    width: 1200px;
     margin-bottom: 25px;
     margin-left: 50px;
-    margin-right: 50px;
+    padding: 0px 0px 0px 0px;
   }
+
+  #forecast {
+    padding: 0px 0px 0px 0px;
+  }
+
   .sectionsWrapper .footerSection {
     -webkit-order: 0;
     -ms-flex-order: 0;
