@@ -23,12 +23,20 @@ body {
   border: 1px solid black;
   color: black;
 }
-
-.btn-outline-secondary:hover {
+.btn:hover {
   border: 1px solid black;
   background: white;
   cursor: pointer;
   transition: all 200ms ease;
+}
+.btn:active {
+  text-decoration: none;
+}
+.btn:active {
+  text-decoration: none;
+}
+.btn:visited {
+  text-decoration: none !important;
 }
 
 .fa-search-location {
@@ -193,8 +201,35 @@ h1 {
 
 @media (max-width: 767.98px) {
   .topSection {
-    margin-top: 50px;
-    margin-bottom: 125px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .middleSection {
+    text-align: center;
+  }
+
+  #fahrenheit-link {
+    margin-left: 5px;
+  }
+  .card-body1 {
+    margin-bottom: 25px;
+  }
+  #card-body2 {
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .currentLocation {
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .footerSection {
+    margin-top: 25px;
+    padding-right: 25px;
+  }
+  .card {
+    margin-top: 16px;
   }
 }
 
@@ -203,9 +238,16 @@ h1 {
     margin-top: 50px;
     -webkit-align-items: center;
     align-items: center;
+    margin-bottom: 50px;
   }
   .input-group {
     margin: 0;
+  }
+  .middleSection {
+    margin-bottom: 50px;
+  }
+  .card {
+    margin-top: 25px;
   }
 }
 
